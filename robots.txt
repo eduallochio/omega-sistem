@@ -1,0 +1,14 @@
+# robots.txt para Omega Sistem
+User-agent: *
+Allow: /
+
+# Priorizar páginas principais
+Crawl-delay: 0
+
+# Bloquear diretórios desnecessários
+Disallow: /cgi-bin/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://omegasistem.com.br/sitemap.xml

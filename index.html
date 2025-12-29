@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Omega Sistem - Eduardo Allochio | Desenvolvedor Full Stack especializado em React, Node.js, desenvolvimento web e mobile. Sistemas personalizados em Vila Velha ES.">
+    <meta name="keywords" content="desenvolvedor web, programador, full stack, React, Node.js, JavaScript, desenvolvimento mobile, sistemas web, CRM, ERP, Vila Velha ES, Espírito Santo, Eduardo Allochio, Omega Sistem">
+    <meta name="author" content="Eduardo Allochio - Omega Sistem">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="pt-BR">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="general">
+    <link rel="canonical" href="https://omegasistem.com.br/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://omegasistem.com.br/">
+    <meta property="og:title" content="Omega Sistem | Desenvolvedor Full Stack - Eduardo Allochio">
+    <meta property="og:description" content="Desenvolvimento de sites, aplicativos mobile e sistemas web personalizados. React, Node.js, JavaScript. Vila Velha ES.">
+    <meta property="og:image" content="https://omegasistem.com.br/img/avatar.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Omega Sistem">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://omegasistem.com.br/">
+    <meta name="twitter:title" content="Omega Sistem | Desenvolvedor Full Stack - Eduardo Allochio">
+    <meta name="twitter:description" content="Desenvolvimento de sites, aplicativos mobile e sistemas web personalizados. React, Node.js, JavaScript.">
+    <meta name="twitter:image" content="https://omegasistem.com.br/img/avatar.png">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="BR-ES">
+    <meta name="geo.placename" content="Vila Velha">
+    <meta name="geo.position" content="-20.3297;-40.2925">
+    
+    <title>Omega Sistem | Desenvolvedor Full Stack - Eduardo Allochio | React, Node.js, Web & Mobile</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+    
+    <!-- Preload recursos críticos -->
+    <link rel="preload" href="styles.min.css" as="style">
+    <link rel="preload" href="img/avatar.png" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    
+    <!-- Google Fonts otimizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Font Awesome otimizado (apenas ícones usados) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+    
+    <link rel="stylesheet" href="styles.min.css">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Eduardo Allochio",
+      "jobTitle": "Desenvolvedor Full Stack",
+      "url": "https://omegasistem.com.br",
+      "image": "https://omegasistem.com.br/img/avatar.png",
+      "email": "eduallochio2@outlook.com",
+      "telephone": "+55-27-99871-4453",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vila Velha",
+        "addressRegion": "ES",
+        "addressCountry": "BR"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Omega Sistem",
+        "url": "https://omegasistem.com.br",
+        "logo": "https://omegasistem.com.br/img/logo-claro.png",
+        "description": "Desenvolvimento de soluções digitais personalizadas"
+      },
+      "sameAs": [
+        "https://github.com/eduallochio",
+        "https://linkedin.com/in/eduardo-allochio"
+      ],
+      "knowsAbout": ["JavaScript", "React", "Node.js", "HTML", "CSS", "SQL", "Git", "Desenvolvimento Web", "Desenvolvimento Mobile"],
+      "alumniOf": "Universidade Vila Velha"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Omega Sistem",
+      "url": "https://omegasistem.com.br",
+      "description": "Portfólio de Eduardo Allochio - Desenvolvedor Full Stack",
+      "author": {
+        "@type": "Person",
+        "name": "Eduardo Allochio"
+      },
+      "inLanguage": "pt-BR"
+    }
+    </script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader">
+            <div class="spinner"></div>
+            <p>Carregando...</p>
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="img/logo-claro.png" alt="Omega Sistem Logo" class="logo-icon logo-light">
+                <img src="img/logo-escuro.png" alt="Omega Sistem Logo" class="logo-icon logo-dark">
+                <h2>Omega Sistem</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#finished-projects" class="nav-link">Projetos Finalizados</a></li>
+                <li><a href="#projects" class="nav-link">Parcerias</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="hero-title">Olá, eu sou <span class="highlight">Eduardo Allochio</span></h1>
+                    <p class="hero-subtitle">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </p>
+                    <p class="hero-description">
+                        Transformo ideias em soluções digitais inovadoras através de código limpo e design intuitivo.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary"><i class="fas fa-briefcase"></i> Ver Parcerias</a>
+                        <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Entre em Contato</a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="profile-image">
+                        <img src="img/avatar.png" alt="Eduardo Allochio" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+                        Sou um desenvolvedor apaixonado por tecnologia e inovação, com experiência em criar
+                        soluções web modernas e eficientes. Meu foco é desenvolver aplicações que proporcionem
+                        a melhor experiência possível aos usuários.
+                    </p>
+                    <p data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+                        Trabalho com diversas tecnologias e frameworks, sempre buscando aprender e me atualizar
+                        com as melhores práticas do mercado. Acredito que código limpo e bem documentado é
+                        essencial para o sucesso de qualquer projeto.
+                    </p>
+
+                    <!-- Habilidades Técnicas -->
+                    <!-- <div class="skills-section" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
+                        <h3 class="skills-title"><i class="fas fa-code"></i> Tecnologias & Ferramentas</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript/TypeScript</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React/Next.js</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js/Express</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML/CSS/Sass</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git/GitHub</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL/NoSQL</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="about-stats">
+                        <div class="stat" data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h3>3+</h3>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="stat" data-aos="zoom-in" data-aos-delay="200" data-aos-once="true">
+                            <div class="stat-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>4+</h3>
+                            <p>Parcerias Realizadas</p>
+                        </div>
+                        <div class="stat" data-aos="zoom-in" data-aos-delay="300" data-aos-once="true">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>4+</h3>
+                            <p>Clientes Satisfeitos</p>
+                        </div>
+                        <div class="stat stat-projects" data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
+                            <div class="stat-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <h3>6</h3>
+                            <p>Projetos Finalizados / Desenvolvimento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Serviços</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Soluções digitais completas para o seu negócio</p>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Desenvolvimento Web</h3>
+                            <p>Criação de sites institucionais, landing pages e aplicações web responsivas e modernas.</p>
+                            <span class="flip-hint"><i class="fas fa-sync-alt"></i> Ver mais</span>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Desenvolvimento Web</h3>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Sites Responsivos</li>
+                                <li><i class="fas fa-check"></i> Landing Pages</li>
+                                <li><i class="fas fa-check"></i> SEO Otimizado</li>
+                                <li><i class="fas fa-check"></i> Performance A+</li>
+                            </ul>
+                            <a href="#contact" class="service-cta">Solicitar Orçamento <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Aplicativos Mobile</h3>
+                            <p>Desenvolvimento de apps nativos e híbridos para Android e iOS com excelente performance.</p>
+                            <span class="flip-hint"><i class="fas fa-sync-alt"></i> Ver mais</span>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Aplicativos Mobile</h3>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Apps Híbridos</li>
+                                <li><i class="fas fa-check"></i> Design UX/UI</li>
+                                <li><i class="fas fa-check"></i> Publicação nas Lojas</li>
+                            </ul>
+                            <a href="#contact" class="service-cta">Solicitar Orçamento <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Sistemas Web</h3>
+                            <p>Sistemas de gestão, dashboards, CRMs e ERPs personalizados para otimizar seu negócio.</p>
+                            <span class="flip-hint"><i class="fas fa-sync-alt"></i> Ver mais</span>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Sistemas Web</h3>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> CRM Customizado</li>
+                                <li><i class="fas fa-check"></i> ERP Completo</li>
+                                <li><i class="fas fa-check"></i> Dashboards</li>
+                                <li><i class="fas fa-check"></i> Automação</li>
+                                <li><i class="fas fa-check"></i> Integrações API</li>
+                            </ul>
+                            <a href="#contact" class="service-cta">Solicitar Orçamento <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Manutenção & Suporte</h3>
+                            <p>Suporte técnico, atualizações, correções e manutenção contínua de sistemas.</p>
+                            <span class="flip-hint"><i class="fas fa-sync-alt"></i> Ver mais</span>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Manutenção & Suporte</h3>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Suporte</li>
+                                <li><i class="fas fa-check"></i> Atualizações</li>
+                                <li><i class="fas fa-check"></i> Backup Diário</li>
+                                <li><i class="fas fa-check"></i> Monitoramento</li>
+                                <li><i class="fas fa-check"></i> Correções Rápidas</li>
+                            </ul>
+                            <a href="#contact" class="service-cta">Solicitar Orçamento <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta" data-aos="fade-up">
+        <div class="cta-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-icon" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h2 data-aos="fade-up" data-aos-delay="200">Pronto para Transformar sua Ideia em Realidade?</h2>
+                <p data-aos="fade-up" data-aos-delay="300">Entre em contato e vamos criar algo incrível juntos!</p>
+                <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#contact" class="btn btn-cta"><i class="fas fa-paper-plane"></i> Começar Agora</a>
+                    <a href="#projects" class="btn btn-cta-secondary"><i class="fas fa-folder-open"></i> Ver Projetos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Prontos
+    <section id="ready-projects" class="ready-projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projetos Prontos</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Soluções completas e personalizadas prontas para uso imediato</p>
+            
+            <div class="ready-projects-grid">
+                <div class="ready-project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="ready-project-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="ready-project-badge">Disponível</div>
+                    <h3>E-commerce Completo</h3>
+                    <p>Loja virtual completa com carrinho, checkout, painel administrativo e integração de pagamentos.</p>
+                    <ul class="ready-project-features">
+                        <li><i class="fas fa-check"></i> Sistema de carrinho</li>
+                        <li><i class="fas fa-check"></i> Painel admin</li>
+                        <li><i class="fas fa-check"></i> Pagamento integrado</li>
+                        <li><i class="fas fa-check"></i> Responsivo</li>
+                    </ul>
+                    <div class="ready-project-price">A partir de R$ 2.500</div>
+                    <a href="#contact" class="btn-ready"><i class="fas fa-shopping-cart"></i> Solicitar Orçamento</a>
+                </div>
+
+                <div class="ready-project-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-badge">Mais Popular</div>
+                    <div class="ready-project-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="ready-project-badge">Disponível</div>
+                    <h3>Site Institucional</h3>
+                    <p>Website profissional para empresas com design moderno, formulários de contato e SEO otimizado.</p>
+                    <ul class="ready-project-features">
+                        <li><i class="fas fa-check"></i> Design moderno</li>
+                        <li><i class="fas fa-check"></i> SEO otimizado</li>
+                        <li><i class="fas fa-check"></i> Formulário de contato</li>
+                        <li><i class="fas fa-check"></i> Blog integrado</li>
+                    </ul>
+                    <div class="ready-project-price">A partir de R$ 1.500</div>
+                    <a href="#contact" class="btn-ready btn-ready-featured"><i class="fas fa-rocket"></i> Solicitar Orçamento</a>
+                </div>
+
+                <div class="ready-project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="ready-project-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="ready-project-badge">Disponível</div>
+                    <h3>Sistema de Agendamento</h3>
+                    <p>Plataforma completa para gerenciar agendamentos online com calendário, notificações e pagamentos.</p>
+                    <ul class="ready-project-features">
+                        <li><i class="fas fa-check"></i> Calendário interativo</li>
+                        <li><i class="fas fa-check"></i> Notificações SMS/Email</li>
+                        <li><i class="fas fa-check"></i> Pagamento online</li>
+                        <li><i class="fas fa-check"></i> Multi-usuários</li>
+                    </ul>
+                    <div class="ready-project-price">A partir de R$ 3.000</div>
+                    <a href="#contact" class="btn-ready"><i class="fas fa-calendar"></i> Solicitar Orçamento</a>
+                </div>
+
+                <div class="ready-project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="ready-project-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="ready-project-badge">Disponível</div>
+                    <h3>Dashboard Analytics</h3>
+                    <p>Painel de controle com gráficos, relatórios e análise de dados em tempo real para sua empresa.</p>
+                    <ul class="ready-project-features">
+                        <li><i class="fas fa-check"></i> Gráficos interativos</li>
+                        <li><i class="fas fa-check"></i> Relatórios em PDF</li>
+                        <li><i class="fas fa-check"></i> Tempo real</li>
+                        <li><i class="fas fa-check"></i> API REST</li>
+                    </ul>
+                    <div class="ready-project-price">A partir de R$ 2.000</div>
+                    <a href="#contact" class="btn-ready"><i class="fas fa-chart-line"></i> Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Projetos Finalizados -->
+    <section id="finished-projects" class="finished-projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projetos Finalizados e em Desenvolvimento</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Conheça alguns dos projetos que desenvolvemos com sucesso e os que estão em andamento</p>
+            
+            <div class="finished-projects-grid">
+                <div class="finished-project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="finished-project-inner">
+                        <div class="finished-project-front">
+                            <a href="https://gestaosafra.com.br/" target="_blank" class="finished-project-image gestao-safra-bg" style="background-image: url('https://biagre.com.br/Downloads/Campanhas/GestaoSafra/1.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat; display: block; text-decoration: none;">
+                            </a>
+                            <div class="finished-project-content">
+                                <div class="finished-project-header">
+                                    <h3>Gestão Safra</h3>
+                                    <span class="finished-badge"><i class="fas fa-check-circle"></i> Concluído</span>
+                                </div>
+                                <p>O Gestão Safra é um Aplicativo completo para gestão e controle agrícola, otimizando processos e aumentando a produtividade do agronegócio.</p>
+                                <div class="finished-project-meta">
+                                    <span><i class="fas fa-tag"></i> Agronegócio</span>
+                                </div>
+                                <span class="project-flip-hint"><i class="fas fa-info-circle"></i> Ver detalhes</span>
+                            </div>
+                        </div>
+                        <div class="finished-project-back">
+                            <h3>Gestão Safra - Biagre</h3>
+                            <div class="project-details">
+                                <h4><i class="fas fa-code"></i> O que foi desenvolvido:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Landing Page</li>
+                                    
+                                </ul>
+                                <h4><i class="fas fa-building"></i> Sobre a empresa:</h4>
+                                <p>A Biagre é uma empresa do setor de agronegócio, especializada em soluções tecnológicas para o campo, auxiliando produtores na otimização de processos.</p>
+                            </div>
+                            <a href="https://gestaosafra.com.br/" target="_blank" class="project-visit-btn"><i class="fas fa-external-link-alt"></i> Visitar Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="finished-project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="finished-project-inner">
+                        <div class="finished-project-front">
+                            <a href="https://www.sampaiomundancas.com.br/" target="_blank" class="finished-project-image sampaio-bg" style="display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                                <img src="https://www.sampaiomundancas.com.br/img/logo.png" alt="Sampaio Mudanças" class="project-logo" loading="lazy">
+                            </a>
+                            <div class="finished-project-content">
+                                <div class="finished-project-header">
+                                    <h3>Sampaio Mudanças</h3>
+                                    <span class="finished-badge"><i class="fas fa-check-circle"></i> Concluído</span>
+                                </div>
+                                <p>Website moderno para empresa de mudanças, com design responsivo, formulário de orçamento e galeria de serviços.</p>
+                                <div class="finished-project-meta">
+                                    <span><i class="fas fa-tag"></i> Serviços</span>
+                                </div>
+                                <span class="project-flip-hint"><i class="fas fa-info-circle"></i> Ver detalhes</span>
+                            </div>
+                        </div>
+                        <div class="finished-project-back">
+                            <h3>Sampaio Mudanças</h3>
+                            <div class="project-details">
+                                <h4><i class="fas fa-code"></i> O que foi desenvolvido:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Galeria de serviços</li>
+                                    <li><i class="fas fa-check"></i> Integração WhatsApp</li>
+                                    <li><i class="fas fa-check"></i> SEO otimizado</li>
+                                    <li><i class="fas fa-check"></i> Design responsivo</li>
+                                    <li><i class="fas fa-check"></i> Formulário de orçamento</li>
+                                    <li><i class="fas fa-check"></i> Performance A+</li>
+                                </ul>
+                                <h4><i class="fas fa-building"></i> Sobre a empresa:</h4>
+                                <p>Sampaio Mudanças é especializada em mudanças residenciais e comerciais, oferecendo serviços de qualidade com segurança e agilidade.</p>
+                            </div>
+                            <a href="https://www.sampaiomundancas.com.br/" target="_blank" class="project-visit-btn"><i class="fas fa-external-link-alt"></i> Visitar Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="finished-project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="finished-project-inner">
+                        <div class="finished-project-front">
+                            <a href="https://credvix.com/" target="_blank" class="finished-project-image credvix-bg" style="display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                                <img src="https://credvix.com/img/logo-credvix.png" alt="Credvix" class="project-logo" loading="lazy">
+                            </a>
+                            <div class="finished-project-content">
+                                <div class="finished-project-header">
+                                    <h3>Credvix</h3>
+                                    <span class="finished-badge"><i class="fas fa-check-circle"></i> Concluído</span>
+                                </div>
+                                <p>Plataforma de uma empresa financeira profissional com design clean, interface intuitiva, site institucional e moderno.</p>
+                                <div class="finished-project-meta">
+                                    <span><i class="fas fa-tag"></i> Institucional</span>
+                                </div>
+                                <span class="project-flip-hint"><i class="fas fa-info-circle"></i> Ver detalhes</span>
+                            </div>
+                        </div>
+                        <div class="finished-project-back">
+                            <h3>Credvix</h3>
+                            <div class="project-details">
+                                <h4><i class="fas fa-code"></i> O que foi desenvolvido:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Site institucional completo</li>
+                                    <li><i class="fas fa-check"></i> Design moderno e profissional</li>
+                                    <li><i class="fas fa-check"></i> Sistema de consultas</li>
+                                    <li><i class="fas fa-check"></i> SEO otimizado</li>
+                                    <li><i class="fas fa-check"></i> Performance A+</li>
+
+                                </ul>
+                                <h4><i class="fas fa-building"></i> Sobre a empresa:</h4>
+                                <p>Credvix é uma empresa do setor financeira afiliada ao Banco BMG e Help que oferece soluções de crédito e com agilidade e transparência para pessoas físicas.</p>
+                            </div>
+                            <a href="https://credvix.com/" target="_blank" class="project-visit-btn"><i class="fas fa-external-link-alt"></i> Visitar Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="finished-project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="finished-project-inner">
+                        <div class="finished-project-front">
+                            <a href="https://geradorguardiao.com.br/" target="_blank" class="finished-project-image shield-icon-bg" style="display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                                <svg class="shield-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L3 7V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V7L12 2Z" fill="url(#shieldGradient)" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 12L11 14L15 10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                        <linearGradient id="shieldGradient" x1="3" y1="2" x2="21" y2="23" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <div class="finished-project-content">
+                                <div class="finished-project-header">
+                                    <h3>Gerador Guardião</h3>
+                                    <span class="finished-badge"><i class="fas fa-check-circle"></i> Concluído</span>
+                                </div>
+                                <div class="project-badges-group">
+                                    <span class="own-project-badge"><i class="fas fa-star"></i> Projeto Próprio</span>
+                                </div>
+                                <p>Website para gerar senhas fortes e seguras.</p>
+                                <div class="finished-project-meta">
+                                    <span><i class="fas fa-tag"></i> Sistema de Gestão</span>
+                                </div>
+                                <span class="project-flip-hint"><i class="fas fa-info-circle"></i> Ver detalhes</span>
+                            </div>
+                        </div>
+                        <div class="finished-project-back">
+                            <h3>Gerador Guardião</h3>
+                            <span class="own-project-badge-back"><i class="fas fa-star"></i> Projeto Próprio</span>
+                            <div class="project-details">
+                                <h4><i class="fas fa-code"></i> O que foi desenvolvido:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Gerador de senhas aleatórias</li>
+                                    <li><i class="fas fa-check"></i> Configurações personalizadas</li>
+                                    <li><i class="fas fa-check"></i> Análise de força da senha</li>
+                                    <li><i class="fas fa-check"></i> Interface intuitiva</li>
+                                    <li><i class="fas fa-check"></i> 100% gratuito</li>
+                                </ul>
+                                <h4><i class="fas fa-lightbulb"></i> Sobre o projeto:</h4>
+                                <p>Ferramenta gratuita desenvolvida para ajudar usuários a criar senhas fortes e seguras, protegendo suas contas online contra ataques.</p>
+                            </div>
+                            <a href="https://geradorguardiao.com.br/" target="_blank" class="project-visit-btn"><i class="fas fa-external-link-alt"></i> Acessar Ferramenta</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="finished-project-card in-development" data-aos="fade-up" data-aos-delay="500">
+                    <div class="finished-project-inner">
+                        <div class="finished-project-front">
+                            <div class="finished-project-image development-bg">
+                                <img src="img/montenegro.png" alt="Montenegro Consultoria Jurídica" class="project-logo development-logo" loading="lazy">
+                            </div>
+                            <div class="finished-project-content">
+                                <div class="finished-project-header">
+                                    <h3>Montenegro Consultoria Jurídica</h3>
+                                    <span class="development-badge"><i class="fas fa-spinner"></i> Em Desenvolvimento</span>
+                                </div>
+                                <p>A empresa Montenegro Consultoria Jurídica e uma empresa especialista em comercio exterior, criação de holding familiar, registro de marcas.</p>
+                                <div class="finished-project-meta">
+                                    <span><i class="fas fa-tag"></i> Consultoria Jurídica</span>
+                                </div>
+                                <span class="project-flip-hint"><i class="fas fa-info-circle"></i> Ver detalhes</span>
+                            </div>
+                        </div>
+                        <div class="finished-project-back">
+                            <h3>Montenegro Consultoria</h3>
+                            <div class="project-details">
+                                <h4><i class="fas fa-code"></i> O que está sendo desenvolvido:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Site institucional completo</li>
+                                    <li><i class="fas fa-check"></i> Área de serviços detalhada</li>
+                                    <li><i class="fas fa-check"></i> Sistema de agendamento</li>
+                                </ul>
+                                <h4><i class="fas fa-building"></i> Sobre a empresa:</h4>
+                                <p>Montenegro Consultoria Jurídica é especializada em comércio exterior, criação de holding familiar e registro de marcas, oferecendo soluções jurídicas estratégicas.</p>
+                            </div>
+                            <div class="project-status-badge">
+                                <i class="fas fa-clock"></i> Previsão de lançamento: Fevereiro 2026
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="finished-project-card in-development" data-aos="fade-up" data-aos-delay="600">
+                    <div class="finished-project-inner">
+                        <div class="finished-project-front">
+                            <a href="https://credvix-farol.vercel.app/" target="_blank" class="finished-project-image development-bg" style="display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                                <img src="https://credvix.com/img/logo-credvix.png" alt="Farol Credvix" class="project-logo development-logo" loading="lazy">
+                            </a>
+                            <div class="finished-project-content">
+                                <div class="finished-project-header">
+                                    <h3>Farol Credvix</h3>
+                                    <span class="development-badge"><i class="fas fa-spinner"></i> Em Desenvolvimento</span>
+                                </div>
+                                <p>CRM completo para gestão da empresa Credvix, com módulos financeiros, requisições, RH, controle de contratos, importações de arquivos e muito mais.</p>
+                                <div class="finished-project-meta">
+                                    <span><i class="fas fa-tag"></i> CRM & Gestão Empresarial</span>
+                                </div>
+                                <span class="project-flip-hint"><i class="fas fa-info-circle"></i> Ver detalhes</span>
+                            </div>
+                        </div>
+                        <div class="finished-project-back">
+                            <h3>Farol Credvix - CRM</h3>
+                            <div class="project-details">
+                                <h4><i class="fas fa-code"></i> O que está sendo desenvolvido:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Dashboard personalizados completo</li>
+                                    <li><i class="fas fa-check"></i> Gestão financeira e contratos</li>
+                                    <li><i class="fas fa-check"></i> Módulo administrativo completo</li>
+                                    <li><i class="fas fa-check"></i> Sistema de requisições e notificações internas</li>
+                                    <li><i class="fas fa-spinner fa-spin"></i> Integrações automáticas</li>
+                                    <li><i class="fas fa-spinner fa-spin"></i> Relatórios personalizados</li>
+                                </ul>
+                                <h4><i class="fas fa-building"></i> Sobre o projeto:</h4>
+                                <p>Sistema CRM robusto e completo para automatizar e otimizar todos os processos internos da Credvix, aumentando produtividade e controle.</p>
+                            </div>
+                            <a href="https://credvix-farol.vercel.app/" target="_blank" class="project-visit-btn"><i class="fas fa-external-link-alt"></i> Preview do Sistema</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcerias e Trabalhos -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Clientes que Confiam</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Procuramos manter uma relação constante com nossos clientes, aprimorando processos e expandindo negócios.</p>
+            
+            <div class="clients-grid">
+                <a href="https://biagre.com.br/" target="_blank" class="client-logo" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://biagre.com.br/Downloads/biagre.jpg" alt="Biagre" loading="lazy">
+                </a>
+                <a href="https://www.sampaiomundancas.com.br/" target="_blank" class="client-logo" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://www.sampaiomundancas.com.br/img/logo.png" alt="Sampaio Mudanças" loading="lazy">
+                </a>
+                <a href="https://credvix.com/" target="_blank" class="client-logo" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://credvix.com/img/apis.png" alt="Credvix" loading="lazy">
+                </a>
+                <a href="#" target="_blank" class="client-logo" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="img/montenegro.png" alt="Montenegro Consultoria Jurídica" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Entre em Contato</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Pronto para transformar suas ideias em realidade? Vamos conversar!</p>
+            
+            <div class="contact-grid">
+                <a href="mailto:eduallochio2@outlook.com" class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>eduallochio2@outlook.com</p>
+                    <span class="contact-action">Enviar email <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="https://wa.me/5527998714453" target="_blank" class="contact-card whatsapp-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="contact-card-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>(27) 99871-4453</p>
+                    <span class="contact-action">Iniciar conversa <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <div class="contact-card location-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Localização</h3>
+                    <p>Vila Velha, ES</p>
+                    <span class="contact-location">Brasil <i class="fas fa-globe-americas"></i></span>
+                </div>
+            </div>
+
+            <div class="social-section" data-aos="fade-up" data-aos-delay="400">
+                <h3>Me acompanhe nas redes sociais</h3>
+                <div class="social-links-modern">
+                    <a href="https://github.com/eduallochio" class="social-link-modern" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/eduardo-allochio-b4970784/" class="social-link-modern" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/eduallochio/" class="social-link-modern" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5527998714453?text=Ol%C3%A1!%20Vim%20pelo%20seu%20portf%C3%B3lio" 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Contato WhatsApp"
+       data-aos="fade-left"
+       data-aos-delay="1000">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Botão Scroll to Top -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="img/logo-claro.png" alt="Omega Sistem Logo" class="logo-icon logo-light">
+                        <img src="img/logo-escuro.png" alt="Omega Sistem Logo" class="logo-icon logo-dark">
+                        <h3>Omega Sistem</h3>
+                    </div>
+                    <p class="footer-description">Transformando ideias em soluções digitais inovadoras.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Início</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> Sobre</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Serviços</a></li>
+                        <li><a href="#finished-projects"><i class="fas fa-chevron-right"></i> Projetos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> eduallochio2@outlook.com</li>
+                        <li><i class="fas fa-phone"></i> (27) 99871-4453</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Vila Velha, ES</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com/eduallochio" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/eduardo-allochio-b4970784/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/eduallochio/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5527998714453" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="footer-year"></span> Omega Sistem. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="script.min.js" defer></script>
+</body>
+</html>
