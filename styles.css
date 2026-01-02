@@ -13,106 +13,6 @@
     --transition: all 0.3s ease;
 }
 
-/* Dark Mode */
-body.dark-mode {
-    --text-color: #e0e0e0;
-    --text-light: #b0b0b0;
-    --bg-color: #1a1a1a;
-    --bg-light: #2a2a2a;
-    --border-color: #404040;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-body.dark-mode .hero,
-body.dark-mode .navbar {
-    background: linear-gradient(135deg, #4a5a9a 0%, #5a3a7a 100%);
-}
-
-body.dark-mode .projects,
-body.dark-mode .contact {
-    background: var(--bg-light);
-}
-
-body.dark-mode .services {
-    background: var(--bg-color);
-}
-
-body.dark-mode .about {
-    background: var(--bg-color);
-}
-
-body.dark-mode .stat {
-    background: var(--bg-light);
-}
-
-body.dark-mode .contact {
-    background: var(--bg-color);
-}
-
-body.dark-mode .contact-card {
-    background: var(--bg-light);
-}
-
-body.dark-mode .social-link-modern {
-    background: var(--bg-light);
-}
-
-body.dark-mode .social-link-modern:hover {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-}
-
-.dark-mode .finished-projects {
-    background: var(--bg-color);
-}
-
-.dark-mode .finished-project-card {
-    background: var(--bg-light);
-}
-
-.dark-mode .tech-tag {
-    background: #1a1a1a;
-}
-
-body.dark-mode .service-card {
-    background: var(--bg-light);
-    border-color: var(--border-color);
-}
-
-body.dark-mode .service-card:hover {
-    background: var(--bg-color);
-    border-color: var(--primary-color);
-}
-
-body.dark-mode .footer {
-    background: #0a0a0a;
-    border-top: 1px solid var(--border-color);
-}
-
-body.dark-mode .stat {
-    background: var(--bg-light);
-}
-
-body.dark-mode .client-logo {
-    background: var(--bg-color);
-}
-
-body.dark-mode .contact-item {
-    background: var(--bg-color);
-}
-
-body.dark-mode .ready-projects {
-    background: var(--bg-color);
-}
-
-body.dark-mode .ready-project-card {
-    background: var(--bg-light);
-}
-
-body.dark-mode .ready-project-card.featured {
-    border-color: var(--primary-color);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -232,14 +132,6 @@ body {
     display: none;
 }
 
-body.dark-mode .logo-light {
-    display: none;
-}
-
-body.dark-mode .logo-dark {
-    display: block;
-}
-
 .footer-logo {
     display: flex;
     align-items: center;
@@ -307,19 +199,6 @@ body.dark-mode .logo-dark {
     color: var(--primary-color);
 }
 
-body.dark-mode .nav-link {
-    color: #e9ecef;
-    font-weight: 600;
-}
-
-body.dark-mode .nav-link.active {
-    color: #667eea;
-}
-
-body.dark-mode .nav-link:hover {
-    color: #fff;
-}
-
 .hamburger {
     display: none;
     flex-direction: column;
@@ -337,29 +216,6 @@ body.dark-mode .nav-link:hover {
 }
 
 /* Theme Toggle */
-.theme-toggle {
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 50%;
-    transition: var(--transition);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.theme-toggle:hover {
-    background: var(--bg-light);
-    transform: rotate(20deg);
-}
-
-body.dark-mode .theme-toggle i::before {
-    content: "\f185";
-}
-
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -790,25 +646,6 @@ body.dark-mode .theme-toggle i::before {
 .pagination-info span {
     font-weight: 700;
     color: var(--primary-color);
-}
-
-/* Dark mode para filtros e paginação */
-body.dark-mode .filter-btn {
-    background: var(--bg-light);
-    border-color: var(--border-color);
-}
-
-body.dark-mode .filter-btn:hover {
-    border-color: var(--primary-color);
-}
-
-body.dark-mode .pagination-btn:disabled {
-    background: var(--bg-light);
-    color: var(--text-light);
-}
-
-body.dark-mode .pagination-info {
-    background: var(--bg-light);
 }
 
 /* Seções */
@@ -3161,11 +2998,6 @@ section {
     .profile-image {
         width: 280px;
         height: 280px;
-    }
-    
-    body.dark-mode .nav-menu {
-        background-color: var(--bg-color);
-        border-top: 1px solid var(--border-color);
     }
 
     .nav-menu.active {

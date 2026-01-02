@@ -1,3 +1,40 @@
+// Atualização Automática de Estatísticas
+function updateStatistics() {
+    // Ano de fundação/início da carreira
+    const startYear = 2022; // Ajuste conforme necessário
+    const currentYear = new Date().getFullYear();
+    const yearsExperience = currentYear - startYear;
+    
+    // Contar parcerias (logos de clientes)
+    const partnershipLogos = document.querySelectorAll('.client-logo').length;
+    
+    // Contar projetos (cards de projetos finalizados e em desenvolvimento)
+    const projectsCount = document.querySelectorAll('.finished-project-card').length;
+    
+    // Atualizar os elementos HTML
+    const yearsElement = document.getElementById('years-experience');
+    const partnershipsElement = document.getElementById('partnerships-count');
+    const projectsElement = document.getElementById('projects-count');
+    
+    if (yearsElement) {
+        yearsElement.textContent = yearsExperience + '+';
+        yearsElement.setAttribute('data-suffix', '+');
+    }
+    
+    if (partnershipsElement) {
+        partnershipsElement.textContent = partnershipLogos + '+';
+        partnershipsElement.setAttribute('data-suffix', '+');
+    }
+    
+    if (projectsElement) {
+        projectsElement.textContent = projectsCount;
+        projectsElement.setAttribute('data-suffix', '');
+    }
+}
+
+// Executar quando a página carregar
+window.addEventListener('DOMContentLoaded', updateStatistics);
+
 // Menu Mobile Toggle
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
@@ -8,27 +45,6 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         preloader.classList.add('hidden');
     }, 1000);
-});
-
-// Dark Mode Toggle
-const themeToggle = document.getElementById('themeToggle');
-const body = document.body;
-
-// Verificar preferência salva
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-    body.classList.add('dark-mode');
-}
-
-themeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    
-    // Salvar preferência
-    if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'dark');
-    } else {
-        localStorage.setItem('theme', 'light');
-    }
 });
 
 // Inicializar AOS (Animate On Scroll)
