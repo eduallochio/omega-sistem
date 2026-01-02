@@ -444,4 +444,108 @@ if (testimonialWrapper) {
     });
 }
 
-console.log('Portfolio carregado com sucesso! 🚀');
+// Sistema de Filtros e Paginação de Projetos
+const projectsPerPage = 6;
+let currentProjectPage = 1;
+let currentFilter = 'all';
+
+const allProjectCards = document.querySelectorAll('.finished-project-card');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const prevPageBtn = document.getElementById('prevPage');
+const nextPageBtn = document.getElementById('nextPage');
+const currentPageSpan = document.getElementById('currentPage');
+const totalPagesSpan = document.getElementById('totalPages');
+
+function getFilteredProjects() {
+    if (currentFilter === 'all') {
+        return Array.from(allProjectCards);
+    }
+    return Array.from(allProjectCards).filter(card => 
+        card.getAttribute('data-category') === currentFilter
+    );
+}
+
+function updateProjectDisplay() {
+    const filteredProjects = getFilteredProjects();
+    const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
+    
+    // Atualizar informações de paginação
+    totalPagesSpan.textContent = totalPages;
+    currentPageSpan.textContent = currentProjectPage;
+    
+    // Habilitar/desabilitar botões de navegação
+    prevPageBtn.disabled = currentProjectPage === 1;
+    nextPageBtn.disabled = currentProjectPage === totalPages || totalPages === 0;
+    
+    // Ocultar todos os cards primeiro
+    allProjectCards.forEach(card => {
+        card.style.display = 'none';
+    });
+    
+    // Mostrar apenas os cards da página atual e categoria selecionada
+    const startIndex = (currentProjectPage - 1) * projectsPerPage;
+    const endIndex = startIndex + projectsPerPage;
+    
+    filteredProjects.slice(startIndex, endIndex).forEach(card => {
+        card.style.display = 'block';
+    });
+    
+    // Se não houver projetos, resetar para página 1
+    if (filteredProjects.length === 0) {
+        currentPageSpan.textContent = 0;
+    }
+}
+
+// Event listeners para filtros
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remover classe active de todos os botões
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Adicionar classe active ao botão clicado
+        button.classList.add('active');
+        
+        // Atualizar filtro atual
+        currentFilter = button.getAttribute('data-category');
+        
+        // Resetar para primeira página
+        currentProjectPage = 1;
+        
+        // Atualizar display
+        updateProjectDisplay();
+    });
+});
+
+// Event listeners para paginação
+prevPageBtn.addEventListener('click', () => {
+    if (currentProjectPage > 1) {
+        currentProjectPage--;
+        updateProjectDisplay();
+        
+        // Scroll suave para o topo da seção
+        document.getElementById('finished-projects').scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+        });
+    }
+});
+
+nextPageBtn.addEventListener('click', () => {
+    const filteredProjects = getFilteredProjects();
+    const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
+    
+    if (currentProjectPage < totalPages) {
+        currentProjectPage++;
+        updateProjectDisplay();
+        
+        // Scroll suave para o topo da seção
+        document.getElementById('finished-projects').scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+        });
+    }
+});
+
+// Inicializar display de projetos
+updateProjectDisplay();
+
